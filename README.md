@@ -4,6 +4,7 @@ twitter-irc-bot
 Dependencies Installation
 
 $ npm install irc
+
 $ npm install twitter
 
 First need to create a twitter application from developers.twiiter.com for the access tokens.
