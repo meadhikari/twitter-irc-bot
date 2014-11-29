@@ -19,9 +19,9 @@ var twit = new twitter({
     access_token_secret: "*********************************"
 });
 
-twit.stream('user', {track:'twitter_id'}, function(stream) {
+twit.stream('user', {track:twitter_id}, function(stream) {
     stream.on('data', function(data) {
-        if (data.text !== undefined && data.user.screen_name == "twitter_id")
+        if (data.text !== undefined && data.user.screen_name == twitter_id)
         {
           console.log(data);  
           bot.say(config.channels[0], data.text);  
